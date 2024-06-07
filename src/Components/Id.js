@@ -7,7 +7,7 @@ export const Id = () => {
                 <tbody>
                     <tr>
                         <td>
-                            {/* <img src="../me.jpg" alt="Your Image" style={{ width: "300px", height: "380px" }} /> */}
+                            <img src="../me.jpg" style={{ width: "300px", height: "380px" }} />
                         </td>
                         <td style={{ verticalAlign: "top" }}>
                             <h1 style={{verticalAlign: "top" }}>Software Developer</h1>

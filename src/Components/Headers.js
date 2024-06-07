@@ -4,14 +4,97 @@ export const Headers = () => {
   return (
     <header className="header">
       <h1>Shashank Kannan</h1>
-      <nav>
+      <nav className="headers-nav">
         <ul>
-          <li className='headop'><a href='#about'>About</a></li>
-          <li className='headop'><a href='#about'>Projects</a></li>
-          <li className='headop'><a href='#about'>Contact</a></li>
+        <li className='headop' style={{
+  animation: 'slideIn1 2s ease forwards', 
+  border: "2px solid white", 
+  width: "10%",  
+  color:'white',
+  fontWeight:"bold", 
+  cursor: "pointer", 
+  outline: "none",
+  backgroundColor: "transparent",
+  borderRadius: "30px",
+  transition: "transform 0.3s ease",
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)"
+}} 
+onClick={() => {
+  console.log("LinkedIn clicked");
+  window.open('https://www.linkedin.com/in/shatomb/', '_blank');
+}}
+onMouseEnter={(e) => {
+  e.target.style.backgroundColor = "white";
+  e.target.style.color="#333";
+  e.target.style.transform = "scale(1.07)"; 
+}}
+onMouseLeave={(e) => {
+  e.target.style.backgroundColor = "transparent";
+  e.target.style.color="white";
+  e.target.style.transform = "scale(1)"; 
+}}>
+  Linkedin
+</li>
+<li className='headop' style={{
+  animation: 'slideIn1 2s ease forwards', 
+  border: "2px solid white", 
+  width: "10%",  
+  color:'white',
+  fontWeight:"bold", 
+  cursor: "pointer", 
+  outline: "none",
+  backgroundColor: "transparent",
+  borderRadius: "30px",
+  transition: "transform 0.3s ease",
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)"
+}} 
+onClick={() => {
+  console.log("LinkedIn clicked");
+  window.open('https://github.com/shashankkannan', '_blank');
+}}
+onMouseEnter={(e) => {
+  e.target.style.backgroundColor = "white";
+  e.target.style.color="#333";
+  e.target.style.transform = "scale(1.07)"; 
+}}
+onMouseLeave={(e) => {
+  e.target.style.backgroundColor = "transparent";
+  e.target.style.color="white";
+  e.target.style.transform = "scale(1)"; 
+}}>
+GitHub
+</li>
+<li className='headop' style={{
+  animation: 'slideIn1 2s ease forwards', 
+  border: "2px solid white", 
+  width: "10%",  
+  color:'white',
+  fontWeight:"bold", 
+  cursor: "pointer", 
+  outline: "none",
+  backgroundColor: "transparent",
+  borderRadius: "30px",
+  transition: "transform 0.3s ease",
+  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)"
+}} 
+onClick={() => {
+  console.log("LinkedIn clicked");
+  window.open('mailto:kannan21@uwindsor.ca', '_blank');
+}}
+onMouseEnter={(e) => {
+  e.target.style.backgroundColor = "white";
+  e.target.style.color="#333";
+  e.target.style.transform = "scale(1.07)"; 
+}}
+onMouseLeave={(e) => {
+  e.target.style.backgroundColor = "transparent";
+  e.target.style.color="white";
+  e.target.style.transform = "scale(1)"; 
+}}>
+Email
+</li>
         </ul>
       </nav>
     </header>
   );
 };
-

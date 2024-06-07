@@ -44,3 +44,11 @@ nav ul li {
   transition: color 0.3s ease, font-size 0.3s ease;
 }
 
+
+/* animations */
+
+@keyframes underlineAnimation {
+  to {
+    width: 100%; /* Underline extends from left to right */
+  }
+}

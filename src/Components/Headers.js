@@ -1,9 +1,25 @@
 import React from 'react';
+import{ useEffect, useState } from 'react';
 
 export const Headers = () => {
+    const [typedText, setTypedText] = useState('');
+    useEffect(() => {
+        const words = "Shashank Kannan".split(''); // Split the text into an array of characters
+        let currentText = '';
+        let index = 0;
+        const interval = setInterval(() => {
+          if (index < words.length) {
+            currentText += words[index];
+            setTypedText(currentText);
+            index++;
+          } else {
+            clearInterval(interval);
+          }
+        }, 100); // Adjust the typing speed by changing the interval duration
+      }, []);
   return (
     <header className="header">
-      <h1>Shashank Kannan</h1>
+      <h1 className="animated-heading">{typedText}</h1>
       <nav className="headers-nav">
         <ul>
         <li className='headop' style={{

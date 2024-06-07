@@ -6,9 +6,9 @@ export const Headers = () => {
       <h1>Shashank Kannan</h1>
       <nav>
         <ul>
-          <li className='headop'><a href=''>About</a></li>
-          <li className='headop'><a href=''>Projects</a></li>
-          <li className='headop'><a href=''>Contact</a></li>
+          <li className='headop'><a>About</a></li>
+          <li className='headop'><a>Projects</a></li>
+          <li className='headop'><a>Contact</a></li>
         </ul>
       </nav>
     </header>

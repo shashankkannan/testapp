@@ -23,7 +23,7 @@ export const Headers = () => {
       <nav className="headers-nav">
         <ul>
         <li className='headop' style={{
-  animation: 'slideIn1 2s ease forwards', 
+  animation: 'slideIn1 2s forwards', 
   border: "2px solid white", 
   width: "10%",  
   color:'white',
@@ -52,7 +52,7 @@ onMouseLeave={(e) => {
   Linkedin
 </li>
 <li className='headop' style={{
-  animation: 'slideIn1 2s ease forwards', 
+  animation: 'slideIn2 2s forwards',
   border: "2px solid white", 
   width: "10%",  
   color:'white',
@@ -81,7 +81,7 @@ onMouseLeave={(e) => {
 GitHub
 </li>
 <li className='headop' style={{
-  animation: 'slideIn1 2s ease forwards', 
+  animation: 'slideIn3 2s forwards', 
   border: "2px solid white", 
   width: "10%",  
   color:'white',

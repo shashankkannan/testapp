@@ -22,7 +22,6 @@ export const Id = () => {
                                         <td>Column 1 Content</td>
                                         <td>Column 2 Content</td>
                                     </tr>
-                                    {/* Add more rows as needed */}
                                 </tbody>
                             </table>
                         </td>

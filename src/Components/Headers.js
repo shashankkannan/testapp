@@ -4,7 +4,7 @@ import{ useEffect, useState } from 'react';
 export const Headers = () => {
     const [typedText, setTypedText] = useState('');
     useEffect(() => {
-        const words = "Shashank Kannan".split(''); // Split the text into an array of characters
+        const words = "Shashank Kannan".split(''); 
         let currentText = '';
         let index = 0;
         const interval = setInterval(() => {
@@ -15,7 +15,7 @@ export const Headers = () => {
           } else {
             clearInterval(interval);
           }
-        }, 100); // Adjust the typing speed by changing the interval duration
+        }, 100); 
       }, []);
   return (
     <header className="header">

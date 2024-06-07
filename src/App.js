@@ -1,13 +1,13 @@
+import React from 'react';
 import './App.css';
-import { Headers } from './Headers';
+import {Headers} from './Components/Headers';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Headers></Headers>
-      <h1>This is Shashank's portfolio</h1>
+      <Headers />
     </div>
   );
-}
+};
 
 export default App;

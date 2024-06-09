@@ -1,19 +1,22 @@
-export const Projects = ()=>{
-    return(
+import React from 'react';
+import './Projects.css'; // Ensure to create and style this CSS file accordingly
+
+export const Projects = ({ title, description, status, imgSrc, githubLink }) => {
+    return (
         <section id="project">
-            <h2>My Projects</h2>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
-            <p>Here are some of the Agile SDLC projects I worked on during my educational journey. Each project showcases my skills and dedication to leveraging technology to solve real-world problems. </p>
+            <div className="project-card">
+                <img src={imgSrc} alt={title} className="project-image" />
+                <div className="project-info">
+                    <h3 className="project-title">{title}</h3>
+                    <p className="project-description">{description}</p>
+                    <p className={`project-status ${status === 0 ? 'in-progress' : 'completed'}`}>
+                        {status === 0 ? 'In Progress' : 'Completed'}
+                    </p>
+                    <a href={githubLink} className="github-link">
+                        GitHub
+                    </a>
+                </div>
+            </div>
         </section>
-    )
-}
+    );
+};

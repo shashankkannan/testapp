@@ -44,7 +44,20 @@ const App = () => {
       <div className='cursor-outline' data-cursor-outline></div>
       <Headers />
       <Id />
-      <Projects />
+      <Projects 
+        title="Project Alpha" 
+        description="This project is about creating a robust e-commerce platform." 
+        status={1} 
+        imgSrc="https://via.placeholder.com/300"
+        githubLink="https://github.com/project-alpha"
+      />
+      <Projects 
+        title="Project Beta" 
+        description="This project focuses on developing an AI-driven chatbot." 
+        status={0} 
+        imgSrc="https://via.placeholder.com/300"
+        githubLink="https://github.com/project-beta"
+      />
     </div>
   );
 };

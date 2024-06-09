@@ -50,3 +50,11 @@
 .project-link:hover {
     background-color: #555;
 }
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add space between buttons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 10px;
+}

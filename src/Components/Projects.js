@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
-export const Projects = ({ title, description, status, imgSrc, githubLink }) => {
+export const Projects = ({ title, description, status, imgSrc, githubLink, DemoLink, ReportLink }) => {
     return (
         <div className="project-container">
             <img src={imgSrc} alt={title} className="project-image" />
@@ -10,9 +10,21 @@ export const Projects = ({ title, description, status, imgSrc, githubLink }) => 
             <p className={`project-status ${status === 1 ? 'completed' : 'in-progress'}`}>
                 {status === 1 ? 'Completed' : 'In Progress'}
             </p>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                GitHub
-            </a>
+            <div className="project-links">
+                <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                    GitHub
+                </a>
+                {DemoLink && (
+                    <a href={DemoLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                        Demo
+                    </a>
+                )}
+                {ReportLink && (
+                    <a href={ReportLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                        Report
+                    </a>
+                )}
+            </div>
         </div>
     );
 };

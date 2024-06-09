@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 export const Headers = () => {
     const [typedText, setTypedText] = useState('');
     const [scrollPercentage, setScrollPercentage] = useState(0);
+    const [isScrolled, setIsScrolled] = useState(false);
+
     
     useEffect(() => {
         const words = "Shashank Kannan".split(''); // Split the text into an array of characters
@@ -23,6 +25,7 @@ export const Headers = () => {
             const docHeight = document.body.scrollHeight - window.innerHeight;
             const scrolled = (scrollTop / docHeight) * 100;
             setScrollPercentage(scrolled);
+            setIsScrolled(scrollTop > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -34,8 +37,9 @@ export const Headers = () => {
     }, []);
     
     return (
-        <header className="header">
-            <h1 className="animated-heading" style={{fontWeight: "bold"}}>{typedText}</h1>
+        <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
+            {/* <h1 className="animated-heading" style={{fontWeight: "bold"}}>{typedText}</h1> */}
+            <h1 className={`animated-heading ${isScrolled ? 'heading-scrolled' : ''}`} style={{fontWeight: "bold"}}>{typedText}</h1>
             <div className="scroll-percentage" style={{
                 position: "fixed",
                 top: 0,

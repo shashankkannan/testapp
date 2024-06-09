@@ -165,6 +165,16 @@ nav ul li {
   margin: 0 2rem;
   transition: transform 0.3s ease; /* Smooth transition for li */
 }
+.vertical-timeline-element--education .vertical-timeline-element-content {
+    padding: 30px; /* Ensure padding inside the element is sufficient */
+    border: 2px solid #000; /* Border color */
+    border-radius: 12px; /* Optional: for rounded corners */
+    margin-bottom: 20px; /* Space between timeline elements */
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
 
 /* animations */
 

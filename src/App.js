@@ -46,7 +46,7 @@ const App = () => {
       <Headers />
       <Id />
       <Journey/>
-      <Projects 
+      {/* <Projects 
         title="Project Alpha" 
         description="This project is about creating a robust e-commerce platform." 
         status={1} 
@@ -59,7 +59,7 @@ const App = () => {
         status={0} 
         imgSrc="https://via.placeholder.com/300"
         githubLink="https://github.com/project-beta"
-      />
+      /> */}
     </div>
   );
 };

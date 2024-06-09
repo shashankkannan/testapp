@@ -3,6 +3,7 @@ import './App.css';
 import { Headers } from './Components/Headers';
 import { Projects } from './Components/Projects';
 import { Id } from './Components/Id';
+import { Journey } from './Components/Journey';
 
 const App = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const App = () => {
       <div className='cursor-outline' data-cursor-outline></div>
       <Headers />
       <Id />
+      <Journey/>
       <Projects 
         title="Project Alpha" 
         description="This project is about creating a robust e-commerce platform." 

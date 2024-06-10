@@ -2,8 +2,19 @@ import React, { useState, useEffect } from 'react';
 
 export const Id = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isBoxShadowVisible, setIsBoxShadowVisible] = useState(false);
 
     useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsBoxShadowVisible(true);
+        }, 700); // 3 seconds delay
+
+        return () => clearTimeout(timer); // Cleanup the timer
+    }, []);
+
+
+    useEffect(() => {
+        
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
         };
@@ -20,7 +31,7 @@ export const Id = () => {
                 <div style={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.8)", textAlign: "center", marginRight:"10px",  paddingBottom: "20px" }} >
                     <img src="/me.jpg" alt="Description of the image" style={{ marginTop:"10px", width: "65vw", height: "38vh", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", animation: 'slideIn1 2s ease forwards' }} />
                     <h1>Software Developer</h1>
-                    <table style={{ margin: "0 auto" }}>
+                    <table style={{ margin: "0 auto", animation: 'slideIn1 2s ease forwards'}}>
                         <tbody>
                             <tr>
                                 <td style={{ textAlign: "center", fontWeight: "bold" }}>Bachelor of Technology:</td>
@@ -40,20 +51,20 @@ export const Id = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <p style={{ width: "80vw", textAlign: "left", margin: "10px auto 20px auto" }}>
+                    <p style={{ width: "80vw", textAlign: "center", margin: "20px auto 20px auto",  animation: 'slideIn1 2s ease forwards' }}>
                         With a solid foundation in both theoretical and applied aspects of computer science, I bring a blend of creativity and technical expertise to my work. Here you will find examples of my projects, skills, and ways to get in touch with me. Feel free to explore my portfolio and learn more about my professional journey. I look forward to connecting with you!
                     </p>
                 </div>
             ) : (
-                <table style={{ boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.8)" }}>
+                <table className={isBoxShadowVisible ? "tableWithBoxShadow" : ""}>
                     <tbody>
                         <tr>
                             <td>
                                 <img src="/me.jpg" alt="Description of the image" style={{width: "300px", height: "380px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", animation: 'slideIn1 2s ease forwards' }} />
                             </td>
                             <td style={{ verticalAlign: "top" }}>
-                                <h1 style={{ verticalAlign: "top" }}>Software Developer</h1>
-                                <table>
+                                <h1 style={{ verticalAlign: "top", animation: 'slideIn4 2s ease forwards' }}>Software Developer</h1>
+                                <table style={{animation: 'slideIn4 2s ease forwards'}}>
                                     <tbody>
                                         <tr>
                                             <td style={{ textAlign: "left", fontWeight: "bold", paddingLeft: "20px" }}>Bachelor of Technology:</td>
@@ -75,7 +86,7 @@ export const Id = () => {
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p style={{ width: "40vw", textAlign: "left", marginLeft: "20px" }}>
+                                <p style={{ width: "40vw", textAlign: "left", marginLeft: "20px", animation: 'slideIn4 2s ease forwards' }}>
                                     With a solid foundation in both theoretical and applied aspects of computer science, I bring a blend of creativity and technical expertise to my work. Here you will find examples of my projects, skills, and ways to get in touch with me. Feel free to explore my portfolio and learn more about my professional journey. I look forward to connecting with you!
                                 </p>
                             </td>

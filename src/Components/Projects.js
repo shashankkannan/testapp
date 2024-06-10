@@ -11,9 +11,10 @@ export const Projects = ({ title, description, status, imgSrc, githubLink, DemoL
                 {status === 1 ? 'Completed' : 'In Progress'}
             </p>
             <div className="project-links">
+            {githubLink && (
                 <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
                     GitHub
-                </a>
+                </a>)}
                 {DemoLink && (
                     <a href={DemoLink} target="_blank" rel="noopener noreferrer" className="project-link">
                         Demo

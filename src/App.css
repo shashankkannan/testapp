@@ -95,7 +95,7 @@ nav ul li {
 
 }
 .headop {
-  animation: slideIn1 2s ease forwards;
+  animation: slideIn5 1s ease forwards;
   border: 2px solid white;
   width: 10%;
   color: white;
@@ -177,6 +177,63 @@ nav ul li {
 .journey {
   padding: 20px;
 }
+.vertical-timeline-element .vertical-timeline-element-date {
+  position: relative;
+  left: 10px !important; /* Adjust the left value to move the date closer to the icon */
+  transform: translateX(0) !important; /* Ensures the date moves only on X-axis */
+}
+.vertical-timeline-element--education .vertical-timeline-element-content {
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.vertical-timeline-element-date {
+  position: relative;
+  left: -100px;
+  transform: translateX(0);
+}
+
+.buttons-container {
+  margin-top: 10px;
+}
+
+.learn-more-button {
+  background: linear-gradient(to right, #333 50%, #333 50%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0  .6s ease;
+  margin-right: 5px; /* Add some spacing between buttons */
+}
+
+.learn-more-button:hover {
+  background-color: hsl(0, 89%, 17%);;
+  background-image: linear-gradient(to right, #957171 50%, #957171 50%);
+}
+.progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 20px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 1s ease-in-out;
+}
+
 
 .learn-more-button {
   background: #333;
@@ -192,10 +249,31 @@ nav ul li {
 .learn-more-button:hover {
   background-color: #555;
 }
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+.tableWithBoxShadow {
+  animation: showBoxShadow 1s forwards;
+  animation-delay: 1s;
+}
 
 
 /* animations */
+
+@keyframes showBoxShadow {
+  from { box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); }
+  to { box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); }
+}
 
 @keyframes underlineAnimation {
   to {
@@ -232,6 +310,28 @@ nav ul li {
   }
   to {
       transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn4 {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn5 {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
       opacity: 1;
   }
 }

@@ -41,6 +41,7 @@ const App = () => {
   
   return (
     <div className="App">
+       <div class="content">
       <div className='cursor-dot' data-cursor-dot></div>
       <div className='cursor-outline' data-cursor-outline></div>
       <Headers />
@@ -60,6 +61,7 @@ const App = () => {
         imgSrc="https://via.placeholder.com/300"
         githubLink="https://github.com/project-beta"
       /> */}
+      </div>
     </div>
   );
 };

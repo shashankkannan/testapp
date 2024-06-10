@@ -62,7 +62,7 @@ export const Id = () => {
                             <td>
                                 <img src="/me.jpg" alt="Description of the image" style={{width: "300px", height: "380px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", animation: 'slideIn1 2s ease forwards' }} />
                             </td>
-                            <td style={{ verticalAlign: "top" }}>
+                            <td style={{ verticalAlign: "top", height:"40px" }}>
                                 <h1 style={{ verticalAlign: "top", animation: 'slideIn4 2s ease forwards' }}>Software Developer</h1>
                                 <table style={{animation: 'slideIn4 2s ease forwards'}}>
                                     <tbody>

@@ -9,6 +9,8 @@ import '../App.css';
 
 export const Journey = () => {
     const [modalInfo, setModalInfo] = useState({ show: false, title: '', content: '' });
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollTop = useRef(0);
 
     const openModal = (title, content) => {
         setModalInfo({ show: true, title, content });
@@ -45,6 +47,37 @@ export const Journey = () => {
             setProgress3(rect3.top >= 0 && rect3.bottom <= window.innerHeight ? 100 : 0);
           }
         
+          const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          if (currentScrollTop < lastScrollTop.current) {
+              setIsVisible(false);
+          } else {
+              setIsVisible(true);
+          }
+          lastScrollTop.current = currentScrollTop <= 0 ? 0 : currentScrollTop;
+  
+          // Change background color based on scroll position
+          const body = document.body;
+          if (currentScrollTop < 300) {
+            body.style.backgroundColor = '#f0f8ff'; // AliceBlue
+        } else if (currentScrollTop < 600) {
+            body.style.backgroundColor = '#faebd7'; // AntiqueWhite
+        } else if (currentScrollTop < 900) {
+            body.style.backgroundColor = '#ffefd5'; // PapayaWhip
+        } else if (currentScrollTop < 1200) {
+            body.style.backgroundColor = '#ffe4e1'; // MistyRose
+        } else if (currentScrollTop < 1500) {
+            body.style.backgroundColor = '#e6e6fa'; // Lavender
+        } else if (currentScrollTop < 1800) {
+            body.style.backgroundColor = '#f5f5dc'; // Beige
+        } else if (currentScrollTop < 2100) {
+            body.style.backgroundColor = '#fffacd'; // LemonChiffon
+        } else if (currentScrollTop < 2400) {
+            body.style.backgroundColor = '#e0ffff'; // LightCyan
+        } else if (currentScrollTop < 2700) {
+            body.style.backgroundColor = '#f8f8ff'; // GhostWhite
+        } else {
+            body.style.backgroundColor = '#f0fff0'; // HoneyDew
+        }
       };
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);

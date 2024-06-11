@@ -5,8 +5,13 @@
     text-align: center;
     max-width: 500px;
     margin: auto;
+    transition: background 0.3s ease;
 }
 
+.project-container:hover {
+    animation: breathing 1.5s ease-in-out infinite alternate;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+}
 .project-image {
     width: 100%;
     height: auto;
@@ -57,4 +62,18 @@
     gap: 10px; /* Add space between buttons */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     margin-top: 10px;
+}
+
+/* animation */
+
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

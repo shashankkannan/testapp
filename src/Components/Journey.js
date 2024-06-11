@@ -140,9 +140,16 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaDeaf />}
                     date={
-                        <div style={{position: 'relative', left: '48vw', top:'20vh'}}>
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
                             <span>Jan - Mar 2024</span>
-                            <p>Tech used</p>
+                            <div className="icons-container">
+                                <img src="/Techicons/reactjs.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/css.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/firebase.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/js.png" alt="Icon 1" className="tech-icon" />
+                            </div>
                             <div className="buttons-container">
                                 <a href="https://github.com/shashankkannan/BeAware_App" target="_blank" rel="noopener noreferrer">
                                     <button className="learn-more-button">GitHub</button>
@@ -173,9 +180,17 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaCamera />}
                     date={
-                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center' }}>
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
                             <span>Sep - Dec 2023</span>
-                            <p>Tech used</p>
+                            <div className="icons-container">
+                                <img src="/Techicons/python.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/ml.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pyflask.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pandas.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/mongodb.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/numpy.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pydata.png" alt="Icon 1" className="tech-icon" />
+                            </div>
                             <div className="buttons-container">
                                 <a href="https://github.com/shashankkannan/SeminarSpace" target="_blank" rel="noopener noreferrer">
                                     <button className="learn-more-button">GitHub</button>
@@ -205,9 +220,15 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaCircleNotch />}
                     date={
-                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center' }}>
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
                             <span>May - Aug 2023</span>
-                            <p>Tech used</p>
+                            <div className="icons-container">
+                                <img src="/Techicons/android.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/xml.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/java.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/firebase.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                            </div>
                             <div className="buttons-container">
                                 <a href="https://github.com/shashankkannan/WiseBridgeApp" target="_blank" rel="noopener noreferrer">
                                     <button className="learn-more-button">GitHub</button>

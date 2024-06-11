@@ -223,13 +223,14 @@ nav ul li {
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
-  transition: background-color 0  .6s ease;
-  margin-right: 5px; /* Add some spacing between buttons */
+  margin-right: 10px; /* Add some spacing between buttons */
+  transition: background-color 0.3s ease, transform 0.6s ease; 
 }
 
+
 .learn-more-button:hover {
-  background-color: hsl(0, 89%, 17%);;
-  background-image: linear-gradient(to right, #957171 50%, #957171 50%);
+  background-color: hsla(0, 89%, 17%, 0.381);
+  transform: scale(1.2);
 }
 .progress-bar-container {
   width: 100%;
@@ -271,9 +272,22 @@ nav ul li {
   transition: opacity 0.5s ease-in-out;
 }
 
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px; /* Adjust the gap between icons as needed */
+  margin-top: 10px;
+}
 
+.tech-icon {
+  width: 50px; /* Adjust the size of the icons as needed */
+  height: 50px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
 
-
+.tech-icon:hover {
+  transform: scale(1.2); /* Scale up the icon on hover */
+}
 
 /* animations */
 

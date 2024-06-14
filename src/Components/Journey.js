@@ -30,6 +30,18 @@ export const Journey = () => {
     const [progress3, setProgress3] = useState(0);
     const progressRef3 = useRef(null);
 
+    const [progress4, setProgress4] = useState(0);
+    const progressRef4 = useRef(null);
+
+    const [progress5, setProgress5] = useState(0);
+    const progressRef5 = useRef(null);
+
+    const [progress6, setProgress6] = useState(0);
+    const progressRef6 = useRef(null);
+
+    const [progress7, setProgress7] = useState(0);
+    const progressRef7 = useRef(null);
+
     const handleScroll = () => {
         // Check if each progressRef is in view and update its progress state
         if (progressRef1.current) {
@@ -46,6 +58,26 @@ export const Journey = () => {
             const rect3 = progressRef3.current.getBoundingClientRect();
             setProgress3(rect3.top >= 0 && rect3.bottom <= window.innerHeight ? 100 : 0);
           }
+
+            if (progressRef4.current) {
+                const rect4 = progressRef4.current.getBoundingClientRect();
+                setProgress4(rect4.top >= 0 && rect4.bottom <= window.innerHeight ? 100 : 0);
+            }
+        
+            if (progressRef5.current) {
+                const rect5 = progressRef5.current.getBoundingClientRect();
+                setProgress5(rect5.top >= 0 && rect5.bottom <= window.innerHeight ? 100 : 0);
+            }
+
+            if (progressRef7.current) {
+                const rect7 = progressRef7.current.getBoundingClientRect();
+                setProgress7(rect7.top >= 0 && rect7.bottom <= window.innerHeight ? 100 : 0);
+            }
+
+            if (progressRef6.current) {
+                const rect6 = progressRef6.current.getBoundingClientRect();
+                setProgress6(rect6.top >= 0 && rect6.bottom <= window.innerHeight ? 100 : 0);
+            }
         
           const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
           if (currentScrollTop < lastScrollTop.current) {
@@ -141,7 +173,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     icon={<FaDeaf />}
                     date={
                         <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
-                            <span>Jan - Mar 2024</span>
+                            <span>Tech Stack</span>
                             <div className="icons-container">
                                 <img src="/Techicons/reactjs.png" alt="Icon 1" className="tech-icon" />
                                 <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
@@ -181,7 +213,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     icon={<FaCamera />}
                     date={
                         <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
-                            <span>Sep - Dec 2023</span>
+                            <span>Tech Stack</span>
                             <div className="icons-container">
                                 <img src="/Techicons/python.png" alt="Icon 1" className="tech-icon" />
                                 <img src="/Techicons/ml.png" alt="Icon 1" className="tech-icon" />
@@ -221,7 +253,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     icon={<FaCircleNotch />}
                     date={
                         <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
-                            <span>May - Aug 2023</span>
+                            <span>Tech Stack</span>
                             <div className="icons-container">
                                 <img src="/Techicons/android.png" alt="Icon 1" className="tech-icon" />
                                 <img src="/Techicons/xml.png" alt="Icon 1" className="tech-icon" />
@@ -250,6 +282,142 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed WiseBridge, an Android app merging Java programming, XML, and Firebase, facilitating educational content sharing. Admins verify content and manage availability; experts contribute and authorize payments; students access quality material. XML-crafted UI ensures simplicity. Firebase manages profiles, encrypted passwords, and content details. Employed GRASP and GoF patterns for effective functionality." 
                         status={1}
                         imgSrc="/WiseBridge.png"
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaCircleNotch />}
+                    date={
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/Linux.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/debian.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/sh.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/c.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/Distributed-File-transfer--ASP" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef4}>
+                                <div className="progress-bar" style={{ width: `${progress4}%` }}></div>
+                            </div>
+                        </div>
+                    }>
+                    <Projects 
+                        title="FileTransfer" 
+                        description="Developed a Debian 12 Linux-based distributed file-sharing system in C for command-line execution. Utilized concurrent processing with threads for efficient client-server communication. Implemented dynamic connection handling, tar.gz file transfers, and error handling for robust performance. Key features include file retrieval by size, date-specific searches, and fetching files based on extension type." 
+                        status={1}
+                        imgSrc="/FileTransfer.png"
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaCircleNotch />}
+                    date={
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/js.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/expressjs.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/css.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/mongoose.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/mongodb.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/Blog_Post" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef5}>
+                                <div className="progress-bar" style={{ width: `${progress5}%` }}></div>
+                            </div>
+                        </div>
+                    }>
+                    <Projects 
+                        title="BlogPost" 
+                        description="Developed a web application with an API for user registration, login, and blog posting. Features include editing, deleting, and searching blogs using tags. Utilized JavaScript, Express.js for server-side scripting, and Mongoose for database schemas. Created a user-friendly interface using HTML, JavaScript, and CSS, ensuring a seamless user experience." 
+                        status={1}
+                        imgSrc="/blogpost.png"
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaCircleNotch />}
+                    date={
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/python.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/numpy.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/scikit-learn.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pydata.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/gcolab.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pandas.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/Statistical_Learning_Project" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                                <a href="https://github.com/shashankkannan/Statistical_Learning_Project/blob/main/2.%20Statistical_Learning_project_report.pdf" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">Report</button>
+                                </a >
+                                
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef6}>
+                                <div className="progress-bar" style={{ width: `${progress6}%` }}></div>
+                            </div>
+                        </div>
+                    }>
+                    <Projects 
+                        title="Statistical Learning" 
+                        description="Designed and implemented a Diabetes Disease Prediction system using various machine learning models such as FCNN, LSTM, KNN, Logistic Regression, SVM, Random Forest, Naive Bayes, Simple CART, XGBoost, and CatBoost. Utilized Dataspell IDE – Jupyter Notebook for development and evaluation. Enhanced accuracy and efficiency in diabetes prediction, contributing to improved healthcare solutions." 
+                        status={1}
+                        imgSrc="/statistical.jpg"
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaCircleNotch />}
+                    date={
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/js.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/css.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/firebase.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/SmartFilter" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1wm4UOpIeyHAqR3WeR-dC_cqlu_d8OQHp/view" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">Demo</button>
+                                </a >
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef7}>
+                                <div className="progress-bar" style={{ width: `${progress7}%` }}></div>
+                            </div>
+                        </div>
+                    }>
+                    <Projects 
+                        title="Smart Filter" 
+                        description="Designed a search engine with features like web crawling, indexing, ranking, autocompletion, spellchecking, and suggestions for Yahoo News. Implemented Trie Indexing and hash trie structures for efficient memory usage and fast word retrieval. Employed advanced ranking techniques like PageRank and the Knuth-Morris-Pratt (KMP) algorithm for swift word matching, ensuring a seamless search experience." 
+                        status={1}
+                        imgSrc="/SmartFIlter.png"
                     />
                 </VerticalTimelineElement>
             </VerticalTimeline>

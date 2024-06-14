@@ -7,9 +7,15 @@ body {
   background-color: white;
   cursor: none;
   position: relative;
-  transition: background-color 2s ease; /* Add transition for smooth background color change */
+  transition: background-color 4s ease; /* Add transition for smooth background color change */
+}
+.tableWithBoxShadow {
+  transition: box-shadow 1.5s ease-in-out; /* Smooth transition for the box-shadow */
 }
 
+.tableWithBoxShadow {
+  box-shadow: 0 4px 8px rgba(0.4, 0.4, 0.4, 0.4); /* Define the desired box-shadow */
+}
 body::before {
   content: '';
   position: fixed;
@@ -288,6 +294,53 @@ nav ul li {
 .tech-icon:hover {
   transform: scale(1.2); /* Scale up the icon on hover */
 }
+.slideIn1 {
+  animation: slideIn4 2s ease forwards;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.contact-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 41.1vw;
+}
+
+.contact-button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  background-color: darkblue;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: grey;
+  color: black;
+  transform: scale(1.1);
+}
+
+.tableWithBoxShadow {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
 
 /* animations */
 

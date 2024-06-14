@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 
-export const Projects = ({ title, description, status, imgSrc, githubLink, DemoLink, ReportLink }) => {
+export const Projects = ({ title, description, status, imgSrc, githubLink, DemoLink, ReportLink,mob }) => {
     return (
         <div className="project-container">
             <img src={imgSrc} alt={title} className="project-image" />
@@ -26,6 +26,15 @@ export const Projects = ({ title, description, status, imgSrc, githubLink, DemoL
                     </a>
                 )}
             </div>
+            {mob && (<div className="icons-container">
+                                <img src="/Techicons/reactjs.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/css.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/firebase.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/js.png" alt="Icon 1" className="tech-icon" />
+                    </div>)}
+            
         </div>
     );
 };

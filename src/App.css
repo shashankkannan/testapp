@@ -139,6 +139,33 @@ nav ul li {
   transition: color 0.3s ease, font-size 0.3s ease;
 }
 
+.headop-mob {
+  animation: slideIn5 1s ease forwards;
+  border: 2px solid white;
+  width: 20%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.headop-mob:hover {
+  background-color: white;
+  color: #333;
+  transform: scale(1.07);
+}
+
+
+.headop-mob a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
 
 .letter {
   display: inline-block;

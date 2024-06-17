@@ -4,7 +4,18 @@ export const Headers = () => {
     const [typedText, setTypedText] = useState('');
     const [scrollPercentage, setScrollPercentage] = useState(0);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     
     useEffect(() => {
         const words = "Shashank Kannan".split(''); // Split the text into an array of characters
@@ -37,6 +48,8 @@ export const Headers = () => {
     }, []);
     
     return (
+
+        
         <header className={`header ${isScrolled ? 'header-scrolled' : ''}`}>
             {/* <h1 className="animated-heading" style={{fontWeight: "bold"}}>{typedText}</h1> */}
             <h1 className={`animated-heading ${isScrolled ? 'heading-scrolled' : ''}`} style={{fontWeight: "bold"}}>{typedText}</h1>
@@ -50,6 +63,34 @@ export const Headers = () => {
                 zIndex: 1000
             }}></div>
             
+            {isMobile ? (
+                <nav className="headers-nav">
+                <ul>
+                    <li className='headop-mob'
+                        onClick={() => {
+                            console.log("LinkedIn clicked");
+                            window.open('https://www.linkedin.com/in/shatomb/', '_blank');
+                        }}>
+                        LinkedIn
+                    </li>
+                    <li className='headop-mob'
+                        onClick={() => {
+                            console.log("GitHub clicked");
+                            window.open('https://github.com/shashankkannan', '_blank');
+                        }}>
+                        GitHub
+                    </li>
+                    <li className='headop-mob'
+                        onClick={() => {
+                            console.log("Email clicked");
+                            window.open('mailto:kannan21@uwindsor.ca', '_blank');
+                        }}>
+                        Email
+                    </li>
+                </ul>
+            </nav>
+
+            ):(
             <nav className="headers-nav">
                 <ul>
                     <li className='headop'
@@ -75,6 +116,7 @@ export const Headers = () => {
                     </li>
                 </ul>
             </nav>
+        )}
         </header>
     );
 };

@@ -143,6 +143,7 @@ nav ul li {
   animation: slideIn5 1s ease forwards;
   border: 2px solid white;
   width: 25%;
+  padding: 10px;
   color: white;
   font-weight: bold;
   cursor: pointer;

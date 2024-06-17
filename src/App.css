@@ -208,7 +208,9 @@ nav ul li {
 }
 
 .headers-nav ul li {
-  margin: 0 2rem;
+  margin: 0 1rem;
+  margin-right: 5vw;
+  
   transition: transform 0.3s ease; /* Smooth transition for li */
 }
 .vertical-timeline-element--education .vertical-timeline-element-content {

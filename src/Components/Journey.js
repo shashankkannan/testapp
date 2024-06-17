@@ -150,7 +150,7 @@ export const Journey = () => {
                     date={<span style={{position: 'relative', left: '6.7vw'}}>Jun 2017 - Jun 2021</span>}>
                     <h3>Computer Science & Engineering</h3>
                     <p>Bachelor of Technology - Sastra University</p>
-                    <button className="learn-more-button" onClick={() => openModal('Computer Science & Engineering', "<p>Moved from my hometown Chennai to Thanjavur to pursue Bachelor of Technology in Computer Science & Engineering at Sastra University. It was a significant transition from a bustling city to a serene college town. Initially, my passion for computer science wasn't innate, but after thorough research, I decided to pursue this field. Despite the initial challenges of adapting to a new environment, I quickly settled in and embraced the opportunity to learn. My journey in computer science was transformative, from mastering basic concepts like building a simple calculator to exploring advanced topics like machine learning algorithms for predictive modeling. The curriculum exposed me to a vast array of subjects, including data structures, AI, and data analysis algorithms, which expanded my horizons. Graduating with a first-class degree, I realized that my decision to pursue computer science engineering was one of the best decisions of my life.")}>Learn More</button>
+                    <button className="learn-more-button-mob" onClick={() => openModal('Computer Science & Engineering', "<p>Moved from my hometown Chennai to Thanjavur to pursue Bachelor of Technology in Computer Science & Engineering at Sastra University. It was a significant transition from a bustling city to a serene college town. Initially, my passion for computer science wasn't innate, but after thorough research, I decided to pursue this field. Despite the initial challenges of adapting to a new environment, I quickly settled in and embraced the opportunity to learn. My journey in computer science was transformative, from mastering basic concepts like building a simple calculator to exploring advanced topics like machine learning algorithms for predictive modeling. The curriculum exposed me to a vast array of subjects, including data structures, AI, and data analysis algorithms, which expanded my horizons. Graduating with a first-class degree, I realized that my decision to pursue computer science engineering was one of the best decisions of my life.")}>Learn More</button>
              </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -160,7 +160,7 @@ export const Journey = () => {
                     date={<span style={{position: 'relative', left: '6.7vw'}}>Dec 2020 - May 2021</span>}>
                     <h3>Software Developer</h3>
                     <p>Vrsavvy Technology</p>
-                    <button className="learn-more-button" onClick={() => openModal('Software Developer', 'During my final year of college, when COVID-19 forced us back to our hometowns and limited our university resources, I knew I had to find alternative paths to grow. That\'s when I ventured into helping local businesses transition online by building websites for them. It was a leap of faith, but it opened doors I never imagined. And then, there was Vrsavvy. An internship there introduced me to the exciting world of virtual reality and pushed me to learn new tools like Unity and ReactJS. At Vrsavvy, I wasn\'t just coding; I was part of something innovative, working on projects that felt like glimpses into the future. This journey has taught me that resilience and adaptability are key, and sometimes the greatest opportunities arise from the most unexpected circumstances.')}>Learn More</button>
+                    <button className="learn-more-button-mob" onClick={() => openModal('Software Developer', 'During my final year of college, when COVID-19 forced us back to our hometowns and limited our university resources, I knew I had to find alternative paths to grow. That\'s when I ventured into helping local businesses transition online by building websites for them. It was a leap of faith, but it opened doors I never imagined. And then, there was Vrsavvy. An internship there introduced me to the exciting world of virtual reality and pushed me to learn new tools like Unity and ReactJS. At Vrsavvy, I wasn\'t just coding; I was part of something innovative, working on projects that felt like glimpses into the future. This journey has taught me that resilience and adaptability are key, and sometimes the greatest opportunities arise from the most unexpected circumstances.')}>Learn More</button>
     </VerticalTimelineElement>
 
                 <VerticalTimelineElement 
@@ -170,7 +170,7 @@ export const Journey = () => {
                     date={<span style={{position: 'relative', left: '6.7vw'}}>Aug 2021 - Mar 2023</span>}>
                     <h3>Systems Engineer</h3>
                     <p>Infosys</p>
-                    <button className="learn-more-button" onClick={() => openModal('Systems Engineer', `After gaining valuable experience at Vrsavvy and graduating from Sastra University, I joined Infosys as a Systems Engineer. My role primarily involved working with the middleware team, where I received extensive training in IMS Linux stream and gained certification in Infosys Lex. During my time at Infosys, I utilized a range of tools and technologies, including:
+                    <button className="learn-more-button-mob" onClick={() => openModal('Systems Engineer', `After gaining valuable experience at Vrsavvy and graduating from Sastra University, I joined Infosys as a Systems Engineer. My role primarily involved working with the middleware team, where I received extensive training in IMS Linux stream and gained certification in Infosys Lex. During my time at Infosys, I utilized a range of tools and technologies, including:
 - Ansible, shell scripting for administrative and automation tasks
 - Python application development
 - Windows and Linux OS administration
@@ -187,7 +187,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     date={<span style={{position: 'relative', left: '6.7vw'}}>Aug 2021 - Mar 2023</span>}>
                     <h3>Applied Computing</h3>
                     <p>Masters - University of Windsor</p>
-                    <button className="learn-more-button" onClick={() => openModal('Applied Computing', 'Detailed information about the Applied Computing program at University of Windsor.')}>Learn More</button>
+                    <button className="learn-more-button-mob" onClick={() => openModal('Applied Computing', 'Detailed information about the Applied Computing program at University of Windsor.')}>Learn More</button>
                 </VerticalTimelineElement>
                 {/* ////////////////////////////// Projects/////////////////////////// */}
                 <VerticalTimelineElement 
@@ -216,6 +216,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="SeminarSpace is an efficient automated attendance system created using Python’s face_recognition library, machine learning, dlib’s pre-trained model, and MongoDB for database storage. It integrates Python Flask to streamline user processes such as model creation, route and controller management, face recognition, and attendance tracking. The system features an easy-to-navigate UI built with HTML, CSS, and JavaScript, and utilizes Tableau for data visualization." 
                         status={1} 
                         imgSrc="/SeminarSpace.png"
+                        mob={SeminarSpaceproj}
                     />
                 </VerticalTimelineElement>
 

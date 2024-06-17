@@ -285,6 +285,13 @@ nav ul li {
   margin-top: 10px;
 }
 
+.icons-container-mob {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Adjust the gap between icons as needed */
+  margin-top: 10px;
+}
+
 .tech-icon {
   width: 50px; /* Adjust the size of the icons as needed */
   height: 50px;
@@ -292,6 +299,16 @@ nav ul li {
 }
 
 .tech-icon:hover {
+  transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+.tech-icon-mob {
+  width: 30px; /* Adjust the size of the icons as needed */
+  height: 30px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.tech-icon-mob:hover {
   transform: scale(1.2); /* Scale up the icon on hover */
 }
 .slideIn1 {

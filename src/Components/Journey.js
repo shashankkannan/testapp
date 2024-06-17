@@ -53,6 +53,15 @@ export const Journey = () => {
     const [progress7, setProgress7] = useState(0);
     const progressRef7 = useRef(null);
 
+    const beawarelistproj = ['reactjs.png', 'html-5.png', 'css.png', 'api.png', 'firebase.png','js.png'];
+    const SeminarSpaceproj = ["python.png", "ml.png", "pyflask.png", "pandas.png", "mongodb.png","numpy.png","pydata.png"];
+    const WiseBridgeproj = ["android.png","xml.png","java.png","firebase.png","api.png"];
+    const FileTransferproj = ["Linux.png","debian.png","sh.png","c.png"];
+    const BlogPostproj = ["js.png","xml.png","expressjs.png","html-5.png","css.png","mongoose.png","mongodb.png"];
+    const Statisticallearnproj = ["python.png","numpy.png","scikit-learn.png","pydata.png","gcolab.png","pandas.png"];
+    const SmartFilterproj = ["html-5.png","css.png","api.png","firebase.png"];
+ 
+
     const handleScroll = () => {
         // Check if each progressRef is in view and update its progress state
         if (progressRef1.current) {
@@ -191,7 +200,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed BeAware, a web application using ReactJS, Firebase, and Spring Boot, aimed at streamlining live stream creation and management for automatic captioning purposes. Users can create, manage, and monitor live streams with ease, while maintaining control over their account settings." 
                         status={1} 
                         imgSrc="/BeAware.png"
-                        mob ="ghk"
+                        mob ={beawarelistproj}
                     />
                     
 
@@ -220,7 +229,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed WiseBridge, an Android app merging Java programming, XML, and Firebase, facilitating educational content sharing. Admins verify content and manage availability; experts contribute and authorize payments; students access quality material. XML-crafted UI ensures simplicity. Firebase manages profiles, encrypted passwords, and content details. Employed GRASP and GoF patterns for effective functionality." 
                         status={1}
                         imgSrc="/WiseBridge.png"
-                        mob ="ghk"
+                        mob={WiseBridgeproj}
                     />
                 </VerticalTimelineElement>
 
@@ -234,7 +243,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed a Debian 12 Linux-based distributed file-sharing system in C for command-line execution. Utilized concurrent processing with threads for efficient client-server communication. Implemented dynamic connection handling, tar.gz file transfers, and error handling for robust performance. Key features include file retrieval by size, date-specific searches, and fetching files based on extension type." 
                         status={1}
                         imgSrc="/FileTransfer.png"
-                        mob ="ghk"
+                        mob ={FileTransferproj}
                     />
                 </VerticalTimelineElement>
 
@@ -248,7 +257,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed a web application with an API for user registration, login, and blog posting. Features include editing, deleting, and searching blogs using tags. Utilized JavaScript, Express.js for server-side scripting, and Mongoose for database schemas. Created a user-friendly interface using HTML, JavaScript, and CSS, ensuring a seamless user experience." 
                         status={1}
                         imgSrc="/blogpost.png"
-                        mob ="ghk"
+                        mob={BlogPostproj}
                     />
                 </VerticalTimelineElement>
 
@@ -262,7 +271,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Designed and implemented a Diabetes Disease Prediction system using various machine learning models such as FCNN, LSTM, KNN, Logistic Regression, SVM, Random Forest, Naive Bayes, Simple CART, XGBoost, and CatBoost. Utilized Dataspell IDE – Jupyter Notebook for development and evaluation. Enhanced accuracy and efficiency in diabetes prediction, contributing to improved healthcare solutions." 
                         status={1}
                         imgSrc="/statistical.jpg"
-                        mob ="ghk"
+                        mob ={Statisticallearnproj}
                     />
                 </VerticalTimelineElement>
 
@@ -276,7 +285,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Designed a search engine with features like web crawling, indexing, ranking, autocompletion, spellchecking, and suggestions for Yahoo News. Implemented Trie Indexing and hash trie structures for efficient memory usage and fast word retrieval. Employed advanced ranking techniques like PageRank and the Knuth-Morris-Pratt (KMP) algorithm for swift word matching, ensuring a seamless search experience." 
                         status={1}
                         imgSrc="/SmartFIlter.png"
-                        mob ="ghk"
+                        mob ={SmartFilterproj}
                     />
                 </VerticalTimelineElement>
             </VerticalTimeline>

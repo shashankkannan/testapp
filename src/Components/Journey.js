@@ -147,7 +147,7 @@ export const Journey = () => {
                     className="vertical-timeline-element--education" 
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaGraduationCap />}
-                    date={<span style={{position: 'relative', left: '6.7vw'}}>Jun 2017 - Jun 2021</span>}>
+                    date={<span style={{position: 'relative', left: '6vw'}}>Jun 2017 - Jun 2021</span>}>
                     <h3>Computer Science & Engineering</h3>
                     <p>Bachelor of Technology - Sastra University</p>
                     <button className="learn-more-button-mob" onClick={() => openModal('Computer Science & Engineering', "<p>Moved from my hometown Chennai to Thanjavur to pursue Bachelor of Technology in Computer Science & Engineering at Sastra University. It was a significant transition from a bustling city to a serene college town. Initially, my passion for computer science wasn't innate, but after thorough research, I decided to pursue this field. Despite the initial challenges of adapting to a new environment, I quickly settled in and embraced the opportunity to learn. My journey in computer science was transformative, from mastering basic concepts like building a simple calculator to exploring advanced topics like machine learning algorithms for predictive modeling. The curriculum exposed me to a vast array of subjects, including data structures, AI, and data analysis algorithms, which expanded my horizons. Graduating with a first-class degree, I realized that my decision to pursue computer science engineering was one of the best decisions of my life.")}>Learn More</button>
@@ -184,7 +184,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     className="vertical-timeline-element--education" 
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaGraduationCap />}
-                    date={<span style={{position: 'relative', left: '6.7vw'}}>Aug 2021 - Mar 2023</span>}>
+                    date={<span style={{position: 'relative', left: '6vw'}}>Aug 2021 - Mar 2023</span>}>
                     <h3>Applied Computing</h3>
                     <p>Masters - University of Windsor</p>
                     <button className="learn-more-button-mob" onClick={() => openModal('Applied Computing', 'Detailed information about the Applied Computing program at University of Windsor.')}>Learn More</button>

@@ -4,6 +4,7 @@ import { Headers } from './Components/Headers';
 import { Projects } from './Components/Projects';
 import { Id } from './Components/Id';
 import { Journey } from './Components/Journey';
+import { Footer } from './Components/Footer';
 
 const App = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
       <Headers />
       <Id />
       <Journey/>
+      <Footer/>
       {/* <Projects 
         title="Project Alpha" 
         description="This project is about creating a robust e-commerce platform." 

@@ -27,11 +27,11 @@ export const Id = () => {
     }, []);
 
     const contactButtons = () => (
-        <table className={isBoxShadowVisible ? "tableWithBoxShadow" : ""}>
+        <table className={isBoxShadowVisible ? "tableWithBoxShadow" : ""} style={{width:"30vw"}}>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <img src="/me.jpg" alt="Description of the image" style={{ width: "300px", height: "380px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", animation: 'slideIn1 2s ease forwards' }} />
+                                        <img src="/me.jpg" alt="Description of the image" style={{ width: "305px", height: "380px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", animation: 'slideIn1 2s ease forwards' }} />
                                     </td>
                                     <td style={{ verticalAlign: "top", height: "40px" }}>
                                     <div className="contact-buttons-container">
@@ -56,7 +56,7 @@ export const Id = () => {
     <i className="fas fa-instagram"></i>
 </button>
         </div>
-                                        <button style={{ borderRadius: "20px", backgroundColor: 'darkblue', color: "white", padding: "15px", marginLeft: "31vw",marginBottom:"5.9vh", fontWeight: "bold", border: "none", transition: "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease" }} 
+                                        <button style={{ borderRadius: "20px", backgroundColor: 'darkblue', color: "white", padding: "15px", marginLeft: "29vw", marginTop:"2.9vh", fontWeight: "bold", border: "none", transition: "background-color 0.3s ease, color 0.3s ease, transform 0.3s ease" }} 
                                             onMouseEnter={(e) => {
                                                 e.target.style.backgroundColor = "grey"
                                                 e.target.style.color = "black"

@@ -138,7 +138,7 @@ export const Journey = () => {
         };
     }, []);
     return (
-        <div className="journey">
+        <div className="journey" style={{marginBottom: "50px"}}>
             <h1>My Journey</h1>
             {isMobile ? (
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -187,7 +187,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     date={<span style={{position: 'relative', left: '5.2vw'}}>Aug 2021 - Mar 2023</span>}>
                     <h3>Applied Computing</h3>
                     <p>Masters - University of Windsor</p>
-                    <button className="learn-more-button-mob" onClick={() => openModal('Applied Computing', 'Detailed information about the Applied Computing program at University of Windsor.')}>Learn More</button>
+                    <button className="learn-more-button-mob" onClick={() => openModal('Applied Computing', 'During my master\'s at the University of Windsor, I completed a comprehensive curriculum of 30 credit hours, including 8 core courses such as Advanced Software Engineering, Internet Applications, and Networking and Data Security. I specialized in Artificial Intelligence by taking courses in Statistical Learning and AI, and focused my Internship/Project II on an AI-related topic, earning a special annotation on my transcript. The experience was enriched by adapting to a new culture after moving from India, where I learned new technical skills through various resources.')}>Learn More</button>
                 </VerticalTimelineElement>
                 {/* ////////////////////////////// Projects/////////////////////////// */}
                 <VerticalTimelineElement 
@@ -337,7 +337,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     date={<span style={{position: 'relative', left: '-48vw'}}>Aug 2021 - Mar 2023</span>}>
                     <h3>Applied Computing</h3>
                     <p>Masters - University of Windsor</p>
-                    <button className="learn-more-button" onClick={() => openModal('Applied Computing', 'Detailed information about the Applied Computing program at University of Windsor.')}>Learn More</button>
+                    <button className="learn-more-button" onClick={() => openModal('Applied Computing', 'During my master\'s at the University of Windsor, I completed a comprehensive curriculum of 30 credit hours, including 8 core courses such as Advanced Software Engineering, Internet Applications, and Networking and Data Security. I specialized in Artificial Intelligence by taking courses in Statistical Learning and AI, and focused my Internship/Project II on an AI-related topic, earning a special annotation on my transcript. The experience was enriched by adapting to a new culture after moving from India, where I learned new technical skills through various resources.')}>Learn More</button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement 
                     className="vertical-timeline-element--education" 

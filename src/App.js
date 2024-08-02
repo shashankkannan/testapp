@@ -5,6 +5,7 @@ import { Projects } from './Components/Projects';
 import { Id } from './Components/Id';
 import { Journey } from './Components/Journey';
 import { Footer } from './Components/Footer';
+import { Skills } from './Components/Skills';
 
 const App = () => {
   useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
       <div className='cursor-outline' data-cursor-outline></div>
       <Headers />
       <Id />
+      <Skills/>
       <Journey/>
       <Footer/>
       {/* <Projects 

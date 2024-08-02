@@ -331,6 +331,13 @@ nav ul li {
   grid-template-columns: repeat(5, 1fr);
   gap: 10px; /* Adjust the gap between icons as needed */
   margin-top: 10px;
+  
+}
+.icons-container1 {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px; /* Adjust the gap between icons as needed */
+  justify-content: center;
 }
 
 .icons-container-mob {

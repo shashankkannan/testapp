@@ -53,6 +53,12 @@ export const Journey = () => {
     const [progress7, setProgress7] = useState(0);
     const progressRef7 = useRef(null);
 
+    const [progress8, setProgress8] = useState(0);
+    const progressRef8 = useRef(null);
+
+    const [progress9, setProgress9] = useState(0);
+    const progressRef9 = useRef(null);
+
     const beawarelistproj = ['reactjs.png', 'html-5.png', 'css.png', 'api.png', 'firebase.png','js.png'];
     const SeminarSpaceproj = ["python.png", "ml.png", "pyflask.png", "pandas.png", "mongodb.png","numpy.png","pydata.png"];
     const WiseBridgeproj = ["android.png","xml.png","java.png","firebase.png","api.png"];
@@ -60,6 +66,7 @@ export const Journey = () => {
     const BlogPostproj = ["js.png","xml.png","expressjs.png","html-5.png","css.png","mongoose.png","mongodb.png"];
     const Statisticallearnproj = ["python.png","numpy.png","scikit-learn.png","pydata.png","gcolab.png","pandas.png"];
     const SmartFilterproj = ["html-5.png","css.png","api.png","firebase.png"];
+    const BaseReactproj = ["html-5.png","css.png","api.png","firebase.png","pyflask.png","python.png",'reactjs.png' ];
  
 
     const handleScroll = () => {
@@ -97,6 +104,14 @@ export const Journey = () => {
             if (progressRef6.current) {
                 const rect6 = progressRef6.current.getBoundingClientRect();
                 setProgress6(rect6.top >= 0 && rect6.bottom <= window.innerHeight ? 100 : 0);
+            }
+            if (progressRef8.current) {
+                const rect8 = progressRef8.current.getBoundingClientRect();
+                setProgress8(rect8.top >= 0 && rect8.bottom <= window.innerHeight ? 100 : 0);
+            }
+            if (progressRef9.current) {
+                const rect9 = progressRef9.current.getBoundingClientRect();
+                setProgress9(rect9.top >= 0 && rect9.bottom <= window.innerHeight ? 100 : 0);
             }
         
           const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -201,6 +216,22 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         status={1} 
                         imgSrc="/BeAware.png"
                         mob ={beawarelistproj}
+                    />
+                    
+
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                >
+                    <Projects 
+                        title="BaseReact" 
+                        description="Developed a Python script to automate the setup of a React or Python Flask  or Python Django application integrated with Firebase/sqlite3. The script configures authentication with email verification, and a real-time database, and includes essential components like signup and signin forms. It uses JavaScript, React Router DOM, and Tkinter for a streamlined user interface. The project also includes a customizable UI leaving room for more development. Additionally, the script installs all dependencies and initializes a Git repository." 
+                        status={1} 
+                        imgSrc="/ReactBase.png"
+                        mob ={BaseReactproj}
                     />
                     
 
@@ -376,6 +407,77 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed BeAware, a web application using ReactJS, Firebase, and Spring Boot, aimed at streamlining live stream creation and management for automatic captioning purposes. Users can create, manage, and monitor live streams with ease, while maintaining control over their account settings." 
                         status={1} 
                         imgSrc="/BeAware.png"
+                    />
+                </VerticalTimelineElement>
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                    date={
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                            <img src="/Techicons/reactjs.png" alt="ReactJS Icon" className="tech-icon" />
+<img src="/Techicons/html-5.png" alt="HTML5 Icon" className="tech-icon" />
+<img src="/Techicons/css.png" alt="CSS Icon" className="tech-icon" />
+<img src="/Techicons/api.png" alt="API Icon" className="tech-icon" />
+<img src="/Techicons/firebase.png" alt="Firebase Icon" className="tech-icon" />
+<img src="/Techicons/pyflask.png" alt="Python Flask Icon" className="tech-icon" />
+<img src="/Techicons/python.png" alt="Python Icon" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/ReactBase" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                    
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef8}>
+                                <div className="progress-bar" style={{ width: `${progress8}%` }}></div>
+                            </div>
+                        </div>
+                    }
+                >
+                    <Projects 
+                        title="BaseReact" 
+                        description="Developed a Python script to automate the setup of a React or Python Flask  or Python Django application integrated with Firebase/sqlite3. The script configures authentication with email verification, and a real-time database, and includes essential components like signup and signin forms. It uses JavaScript, React Router DOM, and Tkinter for a streamlined user interface. The project also includes a customizable UI leaving room for more development. Additionally, the script installs all dependencies and initializes a Git repository." 
+                        status={1} 
+                        imgSrc="/ReactBase.png"
+                        mob ={BaseReactproj}
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                    date={
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                            <img src="/Techicons/reactjs.png" alt="ReactJS Icon" className="tech-icon" />
+<img src="/Techicons/html-5.png" alt="HTML5 Icon" className="tech-icon" />
+<img src="/Techicons/css.png" alt="CSS Icon" className="tech-icon" />
+<img src="/Techicons/api.png" alt="API Icon" className="tech-icon" />
+<img src="/Techicons/firebase.png" alt="Firebase Icon" className="tech-icon" />
+<img src="/Techicons/python.png" alt="Python Icon" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/Time_Capsule" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                    
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef9}>
+                                <div className="progress-bar" style={{ width: `${progress9}%` }}></div>
+                            </div>
+                        </div>
+                    }
+                >
+                    <Projects 
+                        title="TimeCapsule" 
+                        description="Developed a web application using Python, Django, and SQLite3 that enables users to create, lock, and share digital time capsules. The platform allows users to upload and store content such as documents and videos, set opening dates, and subscribe to capsules for notifications. This digital experience replicates the concept of a physical time capsule in a modern, accessible format." 
+                        status={1} 
+                        imgSrc="/timecapsule.jpg"
                     />
                 </VerticalTimelineElement>
 

@@ -59,6 +59,15 @@ export const Journey = () => {
     const [progress9, setProgress9] = useState(0);
     const progressRef9 = useRef(null);
 
+    const [progress10, setProgress10] = useState(0);
+    const progressRef10 = useRef(null);
+    
+    const [progress11, setProgress11] = useState(0);
+    const progressRef11 = useRef(null);
+
+    const [progress12, setProgress12] = useState(0);
+    const progressRef12 = useRef(null);
+
     const beawarelistproj = ['reactjs.png', 'html-5.png', 'css.png', 'api.png', 'firebase.png','js.png'];
     const SeminarSpaceproj = ["python.png", "ml.png", "pyflask.png", "pandas.png", "mongodb.png","numpy.png","pydata.png"];
     const WiseBridgeproj = ["android.png","xml.png","java.png","firebase.png","api.png"];
@@ -112,6 +121,18 @@ export const Journey = () => {
             if (progressRef9.current) {
                 const rect9 = progressRef9.current.getBoundingClientRect();
                 setProgress9(rect9.top >= 0 && rect9.bottom <= window.innerHeight ? 100 : 0);
+            }
+            if (progressRef10.current) {
+                const rect10 = progressRef10.current.getBoundingClientRect();
+                setProgress10(rect10.top >= 0 && rect10.bottom <= window.innerHeight ? 100 : 0);
+            }
+            if (progressRef11.current) {
+                const rect11 = progressRef11.current.getBoundingClientRect();
+                setProgress11(rect11.top >= 0 && rect11.bottom <= window.innerHeight ? 100 : 0);
+            }
+            if (progressRef12.current) {
+                const rect12 = progressRef12.current.getBoundingClientRect();
+                setProgress12(rect12.top >= 0 && rect12.bottom <= window.innerHeight ? 100 : 0);
             }
         
           const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -360,8 +381,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
 - UI/Microservices server deployment
 I was actively involved in handling 200+ tickets and contributed significantly to the cloud infrastructure services team, specializing in middleware. Some of my notable achievements include implementing shell script automation solutions, configuring reverse proxy instances on IBM Security Access Manager, managing SSL certificates on F5 BIG-IP, and working on AWS for server deployment and application integration.`)}>Learn More</button>
 </VerticalTimelineElement>
-
-                <VerticalTimelineElement 
+<VerticalTimelineElement 
                     className="vertical-timeline-element--education" 
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaGraduationCap />}
@@ -376,6 +396,108 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     icon={<FaDeaf />}
                     date={
                         <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/python.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/html-5.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/js.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/django.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/pos" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef12}>
+                                <div className="progress-bar" style={{ width: `${progress12}%` }}></div>
+                            </div>
+                        </div>
+                    }
+                >
+                    <Projects 
+                        title="POS Lite" 
+                        description="Developed a POS system using Django and Python, featuring item scanning, inventory management, and cart operations. Leveraged SQLite3 for efficient data management and designed the app for easy deployment. Implemented a flexible payment setup, ready for integration with Stripe and PayPal. The system supports phone camera scanning, making it portable and convenient for managing inventory." 
+                        status={1} 
+                        imgSrc="/pos.jpg"
+                    />
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                    date={
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                                <img src="/Techicons/python.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pandas.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/pydata.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/api.png" alt="Icon 1" className="tech-icon" />
+                                <img src="/Techicons/sh.png" alt="Icon 1" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/Pjm_Rto" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef11}>
+                                <div className="progress-bar" style={{ width: `${progress11}%` }}></div>
+                            </div>
+                        </div>
+                    }
+                >
+                    <Projects 
+                        title="PJM RTO" 
+                        description="I developed a Python-based tool with a Tkinter GUI to streamline data processing for energy professionals using the PJM RTO queue. It enables easy filtering of projects by size, region, fuel type, and status, enhancing efficiency and providing actionable insights to support informed decision-making in the evolving energy sector." 
+                        status={1} 
+                        imgSrc="/pjm.jpeg"
+                    />
+                </VerticalTimelineElement>
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                    date={
+                        <div style={{ position: 'relative', left: '48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
+                            <span>Tech Stack</span>
+                            <div className="icons-container">
+                            <img src="/Techicons/reactjs.png" alt="ReactJS Icon" className="tech-icon" />
+<img src="/Techicons/html-5.png" alt="HTML5 Icon" className="tech-icon" />
+<img src="/Techicons/css.png" alt="CSS Icon" className="tech-icon" />
+<img src="/Techicons/api.png" alt="API Icon" className="tech-icon" />
+<img src="/Techicons/firebase.png" alt="Firebase Icon" className="tech-icon" />
+<img src="/Techicons/pyflask.png" alt="Python Flask Icon" className="tech-icon" />
+<img src="/Techicons/python.png" alt="Python Icon" className="tech-icon" />
+                            </div>
+                            <div className="buttons-container">
+                                <a href="https://github.com/shashankkannan/ReactBase" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">GitHub</button>
+                                </a>
+                                <a href="https://medium.com/@shashank.kannan.cs/revolutionizing-development-with-automated-setup-scripts-for-react-and-flask-958019741528" target="_blank" rel="noopener noreferrer">
+                                    <button className="learn-more-button">Medium.com</button>
+                                </a>
+                            </div>
+                            <div className="progress-bar-container" ref={progressRef10}>
+                                <div className="progress-bar" style={{ width: `${progress10}%` }}></div>
+                            </div>
+                        </div>
+                    }
+                >
+                    <Projects 
+                        title="ReactBase" 
+                        description="Developed a Python script to automate the setup of a React or Python Flask or Python Django application integrated with Firebase/sqlite3. The script configures authentication with email verification, and a real-time database, and includes essential components like signup and signin forms. It uses JavaScript, React Router DOM, and Tkinter for a streamlined user interface. The project also includes a customizable UI leaving room for more development. Additionally, the script installs all dependencies and initializes a Git repository." 
+                        status={1} 
+                        imgSrc="/ReactBase.png"
+                    />
+                </VerticalTimelineElement>
+                <VerticalTimelineElement 
+                    className="vertical-timeline-element--education" 
+                    iconStyle={{background: "#000", color:'#fff'}} 
+                    icon={<FaDeaf />}
+                    date={
+                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
                             <span>Tech Stack</span>
                             <div className="icons-container">
                                 <img src="/Techicons/reactjs.png" alt="Icon 1" className="tech-icon" />
@@ -407,42 +529,6 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                         description="Developed BeAware, a web application using ReactJS, Firebase, and Spring Boot, aimed at streamlining live stream creation and management for automatic captioning purposes. Users can create, manage, and monitor live streams with ease, while maintaining control over their account settings." 
                         status={1} 
                         imgSrc="/BeAware.png"
-                    />
-                </VerticalTimelineElement>
-                <VerticalTimelineElement 
-                    className="vertical-timeline-element--education" 
-                    iconStyle={{background: "#000", color:'#fff'}} 
-                    icon={<FaDeaf />}
-                    date={
-                        <div style={{ position: 'relative', left: '-48vw', top: '20vh', textAlign: 'center',  display:'flex',flexDirection: 'column',gap: '40px' }}>
-                            <span>Tech Stack</span>
-                            <div className="icons-container">
-                            <img src="/Techicons/reactjs.png" alt="ReactJS Icon" className="tech-icon" />
-<img src="/Techicons/html-5.png" alt="HTML5 Icon" className="tech-icon" />
-<img src="/Techicons/css.png" alt="CSS Icon" className="tech-icon" />
-<img src="/Techicons/api.png" alt="API Icon" className="tech-icon" />
-<img src="/Techicons/firebase.png" alt="Firebase Icon" className="tech-icon" />
-<img src="/Techicons/pyflask.png" alt="Python Flask Icon" className="tech-icon" />
-<img src="/Techicons/python.png" alt="Python Icon" className="tech-icon" />
-                            </div>
-                            <div className="buttons-container">
-                                <a href="https://github.com/shashankkannan/ReactBase" target="_blank" rel="noopener noreferrer">
-                                    <button className="learn-more-button">GitHub</button>
-                                </a>
-                    
-                            </div>
-                            <div className="progress-bar-container" ref={progressRef8}>
-                                <div className="progress-bar" style={{ width: `${progress8}%` }}></div>
-                            </div>
-                        </div>
-                    }
-                >
-                    <Projects 
-                        title="BaseReact" 
-                        description="Developed a Python script to automate the setup of a React or Python Flask  or Python Django application integrated with Firebase/sqlite3. The script configures authentication with email verification, and a real-time database, and includes essential components like signup and signin forms. It uses JavaScript, React Router DOM, and Tkinter for a streamlined user interface. The project also includes a customizable UI leaving room for more development. Additionally, the script installs all dependencies and initializes a Git repository." 
-                        status={1} 
-                        imgSrc="/ReactBase.png"
-                        mob ={BaseReactproj}
                     />
                 </VerticalTimelineElement>
 

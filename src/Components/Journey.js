@@ -360,7 +360,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                     iconStyle={{background: "#000", color:'#fff'}} 
                     icon={<FaBriefcase />}
                     date={<span style={{position: 'relative', left: '-48vw'}}>Dec 2020 - May 2021</span>}>
-                    <h3>Software Developer</h3>
+                    <h3>Full-stack Develope</h3>
                     <p>Vrsavvy Technology</p>
                     <button className="learn-more-button" onClick={() => openModal('Full-stack Developer', 'During my final year of college, when COVID-19 forced us back to our hometowns and limited our university resources, I knew I had to find alternative paths to grow. That\'s when I ventured into helping local businesses transition online by building websites for them. It was a leap of faith, but it opened doors I never imagined. And then, there was Vrsavvy. An internship there introduced me to the exciting world of virtual reality and pushed me to learn new tools like Unity and ReactJS. At Vrsavvy, I wasn\'t just coding; I was part of something innovative, working on projects that felt like glimpses into the future. This journey has taught me that resilience and adaptability are key, and sometimes the greatest opportunities arise from the most unexpected circumstances.')}>Learn More</button>
     </VerticalTimelineElement>

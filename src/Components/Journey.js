@@ -444,9 +444,7 @@ I was actively involved in handling 200+ tickets and contributed significantly t
                                 <a href="https://github.com/shashankkannan/Pjm_Rto" target="_blank" rel="noopener noreferrer">
                                     <button className="learn-more-button">GitHub</button>
                                 </a>
-                                <a href="https://drive.google.com/file/d/1nca_TJx43IFcWzsRCjycZeQf_EiBwdxR/view" target="_blank" rel="noopener noreferrer">
-                                    <button className="learn-more-button">Demo</button>
-                                </a>
+                               
                             </div>
                             <div className="progress-bar-container" ref={progressRef11}>
                                 <div className="progress-bar" style={{ width: `${progress11}%` }}></div>
